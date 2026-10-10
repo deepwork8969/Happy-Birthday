@@ -18,19 +18,19 @@ const SmallLetter = () => {
         if (isOpen) {
             // CLOSE SEQUENCE:
             // 1. Set the class for the closing animation
-            letterElement.classList.add('small-rajib-letter--close');
+            letterElement.classList.add('small-effiee-letter--close');
             setIsOpen(false);
 
             // 2. Remove the closing class after the animation duration (600ms)
             setTimeout(() => {
-                letterElement.classList.remove('small-rajib-letter--close');
+                letterElement.classList.remove('small-effiee-letter--close');
             }, 600);
 
         } else {
             // OPEN SEQUENCE:
             // 1. Ensure the close class is removed
-            letterElement.classList.remove('small-rajib-letter--close');
-            // 2. Set state to open (which adds 'small-rajib-letter--open')
+            letterElement.classList.remove('small-effiee-letter--close');
+            // 2. Set state to open (which adds 'small-effiee-letter--open')
             setIsOpen(true);
         }
     };
@@ -42,47 +42,47 @@ const SmallLetter = () => {
         if (!letterElement) return; // Safety check
 
         // Start the close animation immediately
-        letterElement.classList.remove('small-rajib-letter--open');
-        letterElement.classList.add('small-rajib-letter--close');
+        letterElement.classList.remove('small-effiee-letter--open');
+        letterElement.classList.add('small-effiee-letter--close');
         setIsOpen(false); // Update state to reflect closed status
 
         // Remove the closing class after the animation duration (600ms)
         setTimeout(() => {
-            letterElement.classList.remove('small-rajib-letter--close');
+            letterElement.classList.remove('small-effiee-letter--close');
         }, 600);
     };
 
     // Determine the dynamic class based on 'isOpen' state
-    const letterStateClass = isOpen ? 'small-rajib-letter--open' : '';
+    const letterStateClass = isOpen ? 'small-effiee-letter--open' : '';
 
     return (
         <>
             <div
-                className={`small-rajib-letter ${letterStateClass}`}
+                className={`small-effiee-letter ${letterStateClass}`}
                 ref={letterRef} // Attach the ref here
             >
                 <div
-                    className="small-rajib-envelope"
+                    className="small-effiee-envelope"
                     onClick={handleToggleLetter} // Attach the toggle handler
                 >
-                    <div className="small-rajib-envelope-flap"></div>
-                    <div className="small-rajib-envelope-paper"></div>
-                    <div className="small-rajib-envelope-detail"></div>
+                    <div className="small-effiee-envelope-flap"></div>
+                    <div className="small-effiee-envelope-paper"></div>
+                    <div className="small-effiee-envelope-detail"></div>
                 </div>
 
-                <div className="small-rajib-paper">
-    <div className="small-rajib-paper-content">
+                <div className="small-effiee-paper">
+    <div className="small-effiee-paper-content">
         <div
-            className="small-rajib-paper-close"
+            className="small-effiee-paper-close"
             onClick={handleCloseLetter} // Attach the close handler
         >
             x
         </div>
-        <p>Yo brocaccho,<br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br /><br />Rajib</p>
+        <p>Hieeeeeeee Ninii,<br /><br />Happy Birthday! You are such a special person, and I hope your day is filled with happiness, laughter, and beautiful memories. You deserve all the love in the world.<br /><br />Effiee</p>
     </div>
 
     {/* --- NEW SVG DIARY PAGE DECORATION --- */}
-    <svg className="rajib-diary-deco" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <svg className="effiee-diary-deco" viewBox="0 0 100 100" preserveAspectRatio="none">
         {/* Left 'binding' line */}
         <line x1="5" y1="0" x2="5" y2="100" stroke="#E0DDB7" strokeWidth="1" className="diary-line left-line" />
         {/* Right 'border' line */}

@@ -80,7 +80,7 @@
 
 /* --- Container and State Classes --- */
 
-.small-rajib-letter {
+.small-effiee-letter {
     margin: 150px auto;
     max-width: 350px;
     height: 375px;
@@ -89,31 +89,31 @@
     display: block;
 }
 
-.small-rajib-letter--open .small-rajib-paper {
+.small-effiee-letter--open .small-effiee-paper {
     animation-name: upthenscale;
     animation-duration: .6s;
     animation-fill-mode: forwards;
 }
 
-.small-rajib-letter--close .small-rajib-paper {
+.small-effiee-letter--close .small-effiee-paper {
     animation-name: scalethendown;
     animation-duration: .4s;
     animation-fill-mode: forwards;
 }
 
-.small-rajib-letter--open .small-rajib-paper-content {
+.small-effiee-letter--open .small-effiee-paper-content {
     animation-name: waitfade;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
 }
 
-.small-rajib-letter--open .small-rajib-envelope {
+.small-effiee-letter--open .small-effiee-envelope {
     animation: pause;
 }
 
 /* --- Content and Elements --- */
 
-.small-rajib-paper-content {
+.small-effiee-paper-content {
     color: #545454;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -121,7 +121,7 @@
     opacity: 0;
 }
 
-.small-rajib-paper {
+.small-effiee-paper {
     height: 50px;
     width: 90px;
     background: #f1f0c3;
@@ -133,7 +133,7 @@
 }
 
 /* --- SVG Container inside the Paper --- */
-.small-rajib-paper .rajib-diary-deco {
+.small-effiee-paper .effiee-diary-deco {
     position: absolute;
     top: 0;
     left: 0;
@@ -144,7 +144,7 @@
 }
 
 /* --- Base Diary Line/Dot Styling --- */
-.rajib-diary-deco .diary-line {
+.effiee-diary-deco .diary-line {
     opacity: 0;
     stroke-dasharray: 100;
     /* For drawing effect */
@@ -152,7 +152,7 @@
     animation-fill-mode: forwards;
 }
 
-.rajib-diary-deco .diary-dot {
+.effiee-diary-deco .diary-dot {
     opacity: 0;
     transform-origin: center center;
     animation-fill-mode: forwards;
@@ -188,62 +188,62 @@
 /* --- Conditional Animation Application (Triggers when the letter is open) --- */
 
 /* Lines animate in (like being drawn) */
-.small-rajib-letter--open .rajib-diary-deco .diary-line {
+.small-effiee-letter--open .effiee-diary-deco .diary-line {
     animation: drawIn 1.5s ease-out 0.8s forwards;
     /* Start after paper opens */
 }
 
 /* Dots appear and pulse after lines are drawn */
-.small-rajib-letter--open .rajib-diary-deco .diary-dot {
+.small-effiee-letter--open .effiee-diary-deco .diary-dot {
     animation: pulseDot 2s ease-in-out infinite alternate forwards;
     animation-delay: 2.0s;
     /* Start after lines are mostly in */
 }
 
 /* Stagger dot animations for a more organic feel */
-.small-rajib-letter--open .rajib-diary-deco .dot-1 {
+.small-effiee-letter--open .effiee-diary-deco .dot-1 {
     animation-delay: 2.0s;
 }
 
-.small-rajib-letter--open .rajib-diary-deco .dot-2 {
+.small-effiee-letter--open .effiee-diary-deco .dot-2 {
     animation-delay: 2.1s;
 }
 
-.small-rajib-letter--open .rajib-diary-deco .dot-3 {
+.small-effiee-letter--open .effiee-diary-deco .dot-3 {
     animation-delay: 2.2s;
 }
 
-.small-rajib-letter--open .rajib-diary-deco .dot-4 {
+.small-effiee-letter--open .effiee-diary-deco .dot-4 {
     animation-delay: 2.3s;
 }
 
-.small-rajib-letter--open .rajib-diary-deco .dot-5 {
+.small-effiee-letter--open .effiee-diary-deco .dot-5 {
     animation-delay: 2.4s;
 }
 
-.small-rajib-letter--open .rajib-diary-deco .dot-6 {
+.small-effiee-letter--open .effiee-diary-deco .dot-6 {
     animation-delay: 2.5s;
 }
 
-.small-rajib-letter--open .rajib-diary-deco .dot-7 {
+.small-effiee-letter--open .effiee-diary-deco .dot-7 {
     animation-delay: 2.6s;
 }
 
-.small-rajib-letter--open .rajib-diary-deco .dot-8 {
+.small-effiee-letter--open .effiee-diary-deco .dot-8 {
     animation-delay: 2.7s;
 }
 
-.small-rajib-letter--open .rajib-diary-deco .dot-9 {
+.small-effiee-letter--open .effiee-diary-deco .dot-9 {
     animation-delay: 2.8s;
 }
 
 /* Content z-index, if not already present */
-.small-rajib-paper-content {
+.small-effiee-paper-content {
     z-index: 1;
     position: relative;
 }
 
-.small-rajib-envelope {
+.small-effiee-envelope {
     width: 94px;
     height: 60px;
     background: #f36363;
@@ -258,25 +258,25 @@
 }
 
 /* Hover effects */
-.small-rajib-envelope:hover {
+.small-effiee-envelope:hover {
     animation: pause;
 }
 
-.small-rajib-envelope:hover .small-rajib-envelope-paper {
+.small-effiee-envelope:hover .small-effiee-envelope-paper {
     transform: translateY(-20px);
 }
 
-.small-rajib-envelope:hover .small-rajib-envelope-flap {
+.small-effiee-envelope:hover .small-effiee-envelope-flap {
     transform: translateY(-45px);
     transition: all 300ms ease-in-out;
 }
 
-.small-rajib-envelope:hover .small-rajib-envelope-detail::after {
+.small-effiee-envelope:hover .small-effiee-envelope-detail::after {
     visibility: hidden;
 }
 
 
-.small-rajib-envelope-paper {
+.small-effiee-envelope-paper {
     height: 50px;
     width: 90px;
     background: #f1f0c3;
@@ -288,19 +288,19 @@
     border: 2px solid transparent;
 }
 
-.small-rajib-letter--open .small-rajib-envelope-paper {
+.small-effiee-letter--open .small-effiee-envelope-paper {
     visibility: hidden;
 }
 
-.small-rajib-letter--open .small-rajib-envelope-detail::after {
+.small-effiee-letter--open .small-effiee-envelope-detail::after {
     visibility: hidden;
 }
 
-.small-rajib-letter--close .small-rajib-envelope-paper {
+.small-effiee-letter--close .small-effiee-envelope-paper {
     visibility: hidden;
 }
 
-.small-rajib-envelope-flap {
+.small-effiee-envelope-flap {
     content: '';
     width: 0;
     height: 0;
@@ -317,16 +317,16 @@
     transition: all 300ms ease-in-out;
 }
 
-.small-rajib-letter--open .small-rajib-envelope-flap {
+.small-effiee-letter--open .small-effiee-envelope-flap {
     transform: translateY(-45px);
     transition: all 300ms ease-in-out;
 }
 
-.small-rajib-letter--open .small-rajib-envelope-detail {
+.small-effiee-letter--open .small-effiee-envelope-detail {
     border-top: 2px solid #e25b5b;
 }
 
-.small-rajib-envelope-detail {
+.small-effiee-envelope-detail {
     overflow: hidden;
     height: 100%;
     width: 100%;
@@ -336,7 +336,7 @@
     border-top: 2px solid transparent;
 }
 
-.small-rajib-envelope-detail:before {
+.small-effiee-envelope-detail:before {
     content: '';
     width: 70px;
     height: 70px;
@@ -351,7 +351,7 @@
     border: 4px solid #e65454;
 }
 
-.small-rajib-envelope-detail:after {
+.small-effiee-envelope-detail:after {
     content: '';
     width: 70px;
     height: 70px;
@@ -366,7 +366,7 @@
     border: 4px solid #e65454;
 }
 
-.small-rajib-envelope-fold {
+.small-effiee-envelope-fold {
     height: 25px;
     width: 86px;
     background: #f36363;
@@ -381,7 +381,7 @@
     border-radius: 3px;
 }
 
-.small-rajib-paper-close {
+.small-effiee-paper-close {
     position: absolute;
     right: 10px;
     top: 5px;
@@ -417,45 +417,45 @@
         }
     }
 
-    .small-rajib-paper-content {
+    .small-effiee-paper-content {
         font-size: 14px;
         width: 290px;
     }
 
-    .small-rajib-envelope-paper {
+    .small-effiee-envelope-paper {
         height: 40px;
     }
 
-    .small-rajib-paper {
+    .small-effiee-paper {
         height: 36px;
         width: 65px;
         transform: translateY(275px);
     }
 
-    .small-rajib-envelope {
+    .small-effiee-envelope {
         width: 65px;
         height: 40px;
     }
 
-    .small-rajib-envelope-detail::before {
+    .small-effiee-envelope-detail::before {
         width: 55px;
         height: 56px;
         top: 30px;
     }
 
-    .small-rajib-envelope-detail::after {
+    .small-effiee-envelope-detail::after {
         width: 63px;
         height: 64px;
         top: -46px;
     }
 
-    .small-rajib-envelope-flap {
+    .small-effiee-envelope-flap {
         border-left: 34px solid transparent;
         border-right: 31px solid transparent;
         border-bottom: 45px solid #f36363;
     }
 
-    .small-rajib-envelope-flap {
+    .small-effiee-envelope-flap {
         transition: all 300ms ease-in-out;
 	transform: translateY(-6px);
 }

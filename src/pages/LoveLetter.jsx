@@ -4,43 +4,43 @@ const LoveLetter = () => {
     const lettersData = [
         {
             id: 1,
-            name: "Rexon",
-            msg: "Wish you the happiest birthday",
+            name: "YOURS AND ONLY YOURS EFFIEE",
+            msg: "WISSHH YOUU HAPPPPIESTT BIRTHHDHAAY",
         },
         {
             id: 2,
-            name: "Rexon",
+            name: "_",
             msg: "One picture from you can change my whole day, my whole mood, my whole heartbeat.",
         },
         {
             id: 3,
-            name: "Rexon",
-            msg: "Even through screens and pixels, your laugh reaches me like sunlight through a window—warm, real, and impossible to forget.",
+            name: "MY_CUTE_MANHATTER",
+            msg: "Even through screens and pixels, your laugh reaches me like sunlight through a window warm, real, and impossible to forget.",
         },
         {
             id: 4,
-            name: "Rexon",
+            name: "SHE-MONKEY",
             msg: "Every notification from you feels like a heartbeat whispering, I’m here, and I love you.",
         },
         {
             id: 5,
-            name: "Rexon",
-            msg: "Our messages might travel through wires, but every word you send lands straight in my heart.",
+            name: "FROGG",
+            msg: "You deserve more than words can say\nMore love and joy along the way\nI hope life gives your heart its due\nAnd brings the same warmth you give others too ",
         },
         {
             id: 6,
-            name: "Rexon",
-            msg: "Ever since our we met, my heart knew where it wanted to stay— with you, in every soft moment, every smile, every quiet piece of forever.",
+            name: "KUUCHIPOODI",
+            msg: "Keep growing into who you are\nKeep chasing every little star (PLANET in your words)\nAnd never forget how much you shine\n Your beautiful heart is one of a kind .",
         },
         {
             id: 7,
-            name: "Rexon",
-            msg: " but you turned it into a memory my heart refuses to forget. Since then, every moment with you has felt softer, brighter, and filled with a kind of peace only you bring.",
+            name: "CINNAMON",
+            msg: " May your smile never fade away\nMay happiness fsind you every day\n And when the world feels cloudy and blue\n May something sweet come along for you ",
         },
         {
             id: 8,
-            name: "Rexon",
-            msg: "Since our first conversation, you’ve been the quiet spark that changed my world, turning ordinary days into moments that feel beautifully meant to be.",
+            name: "NINII",
+            msg: "Twenty years of laughter and light\nMay your future be happy and bright\nMay all your little dreams come true\nAnd life bring beautiful things to you",
         },
     ];
     const [openEnvelope, setOpenEnvelope] = useState(false);
@@ -127,7 +127,7 @@ const LoveLetter = () => {
                     <div className="munna envelope-flap text-black relative">
                         <div className='munna absolute left-1/2 top-[20%] -translate-x-1/2 flex items-center justify-center flex-col md:gap-y-2'>
                             <span className='munna font-sriracha md:text-2xl text-lg'>Envelope Of Love</span>
-                            <span className='munna font-dancingScript md:text-3xl text-xl'>Dear Trisha</span>
+                            <span className='munna font-dancingScript md:text-3xl text-xl'>Dear NINII</span>
                         </div>
                     </div>
                     <div className="munna envelope-folds">
